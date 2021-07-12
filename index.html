@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JUST 쇼핑몰</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 부분 -->
+        <header id="header" class="flexContainer">
+            <div id="headerLogo">
+                <a href="index.html">
+                    <img src="images/headerLogo.png" alt="헤더로고">
+                </a>
+            </div>
+            
+            <!--  GNB 메뉴  -->
+            <nav id="gnb">
+                <ul id="mainMenu" class="flexContainer">
+                    <li class="mainLi">
+                        <a href="#">탑</a>
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="#">블라우스</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">티</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">셔츠</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">니트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">아우터</a>
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="#">자켓</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">코드</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">가디건</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">머플러</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">팬츠</a>
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="#">청바지</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">짧은바지</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">긴바지</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">반바지</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mainLi">
+                        <a href="#">악세서리</a>
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="#">귀고리</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">목걸이</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">반지</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#">팔찌</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--  슬라이드 메뉴  -->
+        <div id="slide">
+            <div id="shuttleFrame">
+                <a href="#">
+                    <img src="images/img1.jpg" alt="슬라이드1" width="1200" height="300">
+                    <span>JUST 쇼핑몰 홈페이지 새단장</span>
+                </a>
+                <a href="#">
+                    <img src="images/img2.jpg" alt="슬라이드2" width="1200" height="300">
+                    <span>이달의 쇼핑 이벤트</span>
+                </a>
+                <a href="#">
+                    <img src="images/img3.jpg" alt="슬라이드3" width="1200" height="300">
+                    <span>장바구니 할인 이벤트</span>
+                </a>
+            </div>
+        </div>
+        
+        <!--  컨텐츠 부분  -->
+        <div id="contents" class="flexContainer">
+            
+            <div id="notice">
+                <button type="button" class="tabBtn">공지사항</button>
+                <button type="button" class="tabBtn">갤러리</button>
+                
+                <div id="noticeArea">
+                    <table>
+                        <tbody>
+                            <tr class="selected">
+                                <td>3월 재입고 품목을 알려드립니다.</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>반품/환불 규정에 대해 알려드립니다.</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>S/S 시즌 신규 의류 신상품 안내</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                            <tr>
+                                <td>신규회원 대상 할인 이벤트 안내</td>
+                                <td>2020.03.14</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="galleryArea">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon1.jpg" alt="아이콘1">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon2.jpg" alt="아이콘2">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="images/icon3.jpg" alt="아이콘3">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            
+            <div id="banner">
+                <a href="#">
+                    <img src="images/banner.jpg" alt="배너이미지">
+                </a>
+            </div>
+            
+            <div id="shortcut">
+                <a href="#">
+                    <img src="images/shortcut.jpg" alt="바로가기이미지">
+                </a>
+            </div>
+        </div>  <!-- contents -->
+        
+        <!--  FOOTER  -->
+        <footer id="footer" class="flexContainer">
+            
+            <div id="footerLogo">
+                <a href="#"><img src="images/footerLogo.png" alt="푸터로고이미지"></a>
+            </div>
+            
+            <div id="copyright">
+                <span>COPYRIGHT&copy; by JUST Shop. ALL RIGHTS RESERVED</span>
+            </div>
+            
+            <div id="SNS">
+                <a href="#"><img src="images/sns1.jpg" alt="sns1"></a>
+                <a href="#"><img src="images/sns2.jpg" alt="sns2"></a>
+                <a href="#"><img src="images/sns3.jpg" alt="sns3"></a>
+            </div>
+            
+        </footer>        
+        
+    </div>    <!-- #wrap -->
+    
+    <div id="layerBG">
+        <div id="layerPopup">
+            <h2>제목: 이벤트 안내</h2>
+            <hr>
+            <p>내용: 
+            안녕하세요! JUST쇼핑몰입니다.<br>
+            고객님들의 성원에 보답하는 JUST쇼핑몰이 되고자
+            신규회원 20% <br>할인 이벤트를 실시하고 있습니다.<br>
+            웹과 모바일 가입회원 대상이며,<br>
+            서비스만족을 위해 꾸준히 노력하겠습니다.</p>
+            <div>
+                <button id="closeBtn" type="button"><span>&times;</span>닫기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
