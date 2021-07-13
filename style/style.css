@@ -42,7 +42,17 @@
 }
 .subMenu {
     display: none;
+    position: absolute;
+    border: 1px solid #000;
+    width: 100%;
+    z-index: 1;
     background-color: #fff;
+}
+.subMenu {
+    border-right: none;
+}
+.subMenu:last-child {
+    
 }
 .subMenu .subLi a {
     display: inline-block;
